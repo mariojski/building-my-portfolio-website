@@ -1,0 +1,55 @@
+/* @media queries */
+
+/* extra small */
+/* @media (min-width: 475px) {
+} */
+
+/* small */
+/* @media (min-width: 640px) {
+} */
+
+/* medium */
+/* @media (min-width: 768px) {
+} */
+/* large */
+/* @media (min-width: 1024px) {
+} */
+/* extra large */
+/* @media (min-width: 1280px) {
+} */
+/* 2xl */
+/* @media (min-width: 1536px) {
+} */
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  background-color: var(--clr-rose);
+  color: #f1f5f9;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
+    0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px -10px var(--clr-rose);
+  transform: 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25),
+    0 10px 10px rgba(225, 29, 72, 0.22), 0 0 120px -10px var(--clr-rose);
+}
+
+.container {
+  width: 100%;
+  /*no shorthand bec of the utils won't allow to add margin on top and bottom that has continue utility class thats why we define each margin and padding*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.section {
+  margin-top: 5rem;
+}

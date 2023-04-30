@@ -1,0 +1,134 @@
+.about {
+  display: flex;
+
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.about__title {
+  font-size: var(--size-4xl);
+  color: var(--clr-slate400);
+}
+
+.about__description {
+  max-width: 60ch; /*Control width of text elements by character count*/
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+}
+
+.about__hr {
+  border-color: var(--clr-slate800);
+}
+
+.about__subtitle {
+  font-size: var(--size-sm);
+  color: var(--clr-slate400);
+}
+
+.about__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style-type: "☛";
+  padding-left: 1em;
+  flex: 1;
+}
+
+.about__list {
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+}
+
+.about__list::before {
+  content: "";
+  margin-left: 0.5em;
+}
+
+.about__ul-container {
+  display: flex;
+}
+
+/* @media queries */
+
+/* extra small */
+@media (min-width: 475px) {
+  .about {
+    gap: 1.5rem;
+  }
+
+  .about__content {
+    gap: 1.5rem;
+  }
+
+  .about__description {
+    font-size: var(--size-base);
+  }
+
+  .about__subtitle {
+    font-size: var(--size-base);
+  }
+
+  .about__list {
+    font-size: var(--size-base);
+  }
+}
+
+/* small */
+@media (min-width: 640px) {
+  .about__img {
+    width: 28.6875rem;
+  }
+  .about__img-wrapper {
+    margin: 0 auto;
+  }
+}
+
+/* large */
+@media (min-width: 1024px) {
+  .about {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about__description {
+    font-size: var(--size-lg);
+  }
+
+  .about__subtitle {
+    font-size: var(--size-lg);
+  }
+
+  .about__list {
+    font-size: var(--size-lg);
+  }
+}
+/* extra large */
+@media (min-width: 1280px) {
+  .about__content {
+    gap: 2rem;
+  }
+
+  .about__description {
+    font-size: var(--size-xl);
+  }
+
+  .about__subtitle {
+    font-size: var(--size-3xl);
+  }
+
+  .about__list {
+    font-size: var(--size-xl);
+  }
+
+  .about__img {
+    width: 30.75rem;
+  }
+}
